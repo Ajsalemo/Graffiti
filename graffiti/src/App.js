@@ -9,6 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         {/* Filler */}
+        <h1>Test</h1>
       </div>
     );
   }
