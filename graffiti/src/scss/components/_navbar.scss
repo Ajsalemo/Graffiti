@@ -1,0 +1,34 @@
+// --------------------------------- Navbar ----------------------------- //
+// ---------------------------------------------------------------------- //
+
+nav {
+    .fa-home {
+        color: $color-primary;
+        font-size: 1.1em;
+    }
+
+    button {
+        background-color: $color-primary;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .form-control {
+        border: none;
+        border-radius: 0%;
+    }
+}
+
+.nav-form {
+    flex-grow: 1;
+    justify-content: space-around;
+    &-input {
+        flex-basis: 50%;
+        border-color: transparent;
+    }
+}
+
+// ---------------------------------------------------------------------- //
+// ---------------------------------------------------------------------- //

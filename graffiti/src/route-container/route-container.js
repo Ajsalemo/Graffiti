@@ -1,11 +1,16 @@
 // --------------------------------- Imports ----------------------------- //
+import React from 'react';
+// --------------------------------- Components -------------------------- //
+import Navbar from '../components/navbar';
 // ---------------------------------------------------------------------- //
 
-// Utilities
-@import './utilities/utilities';
+const RouteContainer = () => {
+    return (
+        <Navbar />
+    )
+};
 
-// Components
-@import './components/navbar';
 
 // ---------------------------------------------------------------------- //
+export default RouteContainer;
 // ---------------------------------------------------------------------- //

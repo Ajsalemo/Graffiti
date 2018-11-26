@@ -1,15 +1,15 @@
 // --------------------------------- Imports ----------------------------- //
 import React, { Component } from 'react';
+// --------------------------------- Components -------------------------- //
+import RouteContainer from "./route-container";
 // ---------------------------------------------------------------------- //
-
 
 // ---------------------------------------------------------------------- //
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* Filler */}
-        <h1>Test</h1>
+        <RouteContainer />
       </div>
     );
   }

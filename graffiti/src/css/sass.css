@@ -1,5 +1,26 @@
-.App h1 {
-  color: red;
+nav .fa-home {
+  color: #fff;
+  font-size: 1.1em;
+}
+nav button {
+  background-color: #fff;
+  border: none;
+}
+nav button:hover {
+  cursor: pointer;
+}
+nav .form-control {
+  border: none;
+  border-radius: 0%;
+}
+
+.nav-form {
+  flex-grow: 1;
+  justify-content: space-around;
+}
+.nav-form-input {
+  flex-basis: 50%;
+  border-color: transparent;
 }
 
 /*# sourceMappingURL=sass.css.map */
