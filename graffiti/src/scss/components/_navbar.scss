@@ -2,31 +2,70 @@
 // ---------------------------------------------------------------------- //
 
 nav {
+    .nav-form {
+        flex-grow: 1;
+        justify-content: space-around;
+        &-input {
+            flex-basis: 90%;
+            border-color: transparent;
+
+            @media (min-width: $lrg-screen-size) {
+                flex-basis: 50%;
+            }
+
+            @media (min-width: $md-screen-size) {
+                flex-basis: 70%;
+            }
+        }
+    }
+
     .fa-home {
         color: $color-primary;
         font-size: 1.1em;
     }
 
-    button {
+    button,
+    .input-group-text {
         background-color: $color-primary;
-        border: none;
+        @include border-radius($style: none);
         &:hover {
             cursor: pointer;
         }
     }
 
-    .form-control {
-        border: none;
-        border-radius: 0%;
-    }
-}
+    .dropdown {
+        &-menu {
+            @include border-radius(2px, $nav-secondary);
+            background-color: $dropdown-primary;
+            padding: 0em;
+            height: 100vh;
+            width: 16em;
 
-.nav-form {
-    flex-grow: 1;
-    justify-content: space-around;
-    &-input {
-        flex-basis: 50%;
-        border-color: transparent;
+            @media (max-width: $md-screen-size) {
+                left: -5em;
+            }
+
+            @media (min-width: $lrg-screen-size) {
+                left: 2em;
+            }
+        }
+        &-item {
+            -o-transition:color .2s ease-out, background .4s ease-in;
+            -ms-transition:color .2s ease-out, background .4s ease-in;
+            -moz-transition:color .2s ease-out, background .4s ease-in;
+            -webkit-transition:color .2s ease-out, background .4s ease-in;
+            transition:color .2s ease-out, background .4s ease-in;
+            &:hover {
+                background-color: $nav-secondary;
+            }
+        }
+        &-directory {
+            @include border-radius(1px, $nav-secondary)
+        }
+    }
+
+    .form-control {
+        @include border-radius($style: none);
     }
 }
 
