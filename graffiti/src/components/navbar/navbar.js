@@ -9,7 +9,7 @@ const Navbar = () => {
             <form className="form-inline nav-form">
                 <div className="input-group nav-form-input">
                     <div className="input-group-prepend">
-                        <button><i className="fas fa-search"></i></button>
+                        <button type="submit"><i className="fas fa-search"></i></button>
                     </div>
                     <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
                 </div>
