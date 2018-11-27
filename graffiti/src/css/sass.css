@@ -67,4 +67,11 @@ nav .form-control {
   border: none;
 }
 
+.carousel-slider {
+  height: 45em;
+}
+.carousel .thumbs-wrapper {
+  text-align: center;
+}
+
 /*# sourceMappingURL=sass.css.map */
