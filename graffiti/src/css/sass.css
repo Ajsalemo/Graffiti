@@ -71,7 +71,9 @@ nav .form-control {
   height: 45em;
 }
 .carousel .thumbs-wrapper {
+  padding-top: 1em;
   text-align: center;
+  background-color: #343a40;
 }
 
 /*# sourceMappingURL=sass.css.map */
