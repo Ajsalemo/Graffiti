@@ -19,7 +19,7 @@ const Navbar = () => {
                     </div>
                     {/* --------------------------------------------------------- */}
 
-                    <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
+                    <input className="form-control" type="search" placeholder="Enter a city" aria-label="Search" />
 
                     {/* --------------- Appended icon/Dropdown ----------------------------*/}
                     <div className="input-group-append">
@@ -47,7 +47,7 @@ const Navbar = () => {
                                     <a className="dropdown-item" href="!#">Berlin</a>
                                 </div>
                                 <div className="dropdown-directory">
-                                    <a className="dropdown-item" href="!#">Github</a>
+                                    <a target="_blank" rel="noopener noreferrer" className="dropdown-item" href="https://github.com/Ajsalemo/Graffiti">Github</a>
                                     <a className="dropdown-item pb-3" href="!#">Inspiration</a>
                                 </div>
                             </div>   

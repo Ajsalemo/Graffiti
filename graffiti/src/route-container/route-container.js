@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 // ---------------------------------------------------------------------- //
 
 import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 // ---------------------------------------------------------------------- //
 // --------------------------------- Pages ------------------------------ //
@@ -29,6 +30,7 @@ const RouteContainer = () => {
                     <Route path="/" component={Home} />
                     <Route component={Home} />
                 </Switch>
+                <Footer />
             </div>
         </Router>
     )

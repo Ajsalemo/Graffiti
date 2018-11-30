@@ -1,3 +1,9 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 nav .nav-form {
   flex-grow: 1;
   justify-content: space-around;
@@ -67,6 +73,9 @@ nav .form-control {
   border: none;
 }
 
+.carousel {
+  margin-bottom: 7em;
+}
 .carousel-slider {
   height: 45em;
 }
@@ -74,6 +83,27 @@ nav .form-control {
   padding-top: 1em;
   text-align: center;
   background-color: #343a40;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+.parallax {
+  flex: 1;
+  margin: 7em 0;
+}
+.parallax-image {
+  height: 30em;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  height: 14em;
+  background-color: #b4b4b4;
 }
 
 /*# sourceMappingURL=sass.css.map */

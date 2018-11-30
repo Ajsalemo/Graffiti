@@ -1,0 +1,15 @@
+// ---------------------------------------- Parallax ---------------------------------------- //
+
+.parallax {
+    flex: 1;
+    margin: $margin-seperator 0;
+    &-image {
+        height: 30em;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+// --------------------------------------------------------------------------------------------- //
