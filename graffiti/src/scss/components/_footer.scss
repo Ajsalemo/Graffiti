@@ -1,8 +1,31 @@
 // ---------------------------------- Footer ---------------------------------- //
 
 .footer {
-    height: 14em;
+    height: auto;
     background-color: #b4b4b4;
+    &-text  {
+        color: #fff;
+    }
+
+    .fa {
+        &-react {
+            color: #007bff;
+        }
+        &-node {
+            color: #272727;
+        }
+        &-sass {
+            color: #c69;
+        }
+    }
+
+    a {
+        display: block;
+        &:hover {
+            text-decoration: none;
+            color: inherit
+        }
+    }
 }
   
 // ----------------------------------------------------------------------------------- //

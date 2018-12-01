@@ -102,8 +102,27 @@ h1 {
 }
 
 .footer {
-  height: 14em;
+  height: auto;
   background-color: #b4b4b4;
+}
+.footer-text {
+  color: #fff;
+}
+.footer .fa-react {
+  color: #007bff;
+}
+.footer .fa-node {
+  color: #272727;
+}
+.footer .fa-sass {
+  color: #c69;
+}
+.footer a {
+  display: block;
+}
+.footer a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*# sourceMappingURL=sass.css.map */
