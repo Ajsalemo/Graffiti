@@ -2,11 +2,13 @@
 // ---------------------------------------------------------------------- //
 
 import React, { Component } from 'react';
+import { persistor } from './redux/store';
 
 // ---------------------------------------------------------------------- //
 // --------------------------------- Components -------------------------- //
 
 import RouteContainer from "./route-container";
+import { PersistGate } from 'redux-persist/integration/react';
 // ---------------------------------------------------------------------- //
 // ---------------------------------------------------------------------- //
 
@@ -14,9 +16,11 @@ import RouteContainer from "./route-container";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <RouteContainer />
-      </div>
+      <PersistGate loading={null} persistor={persistor}>
+          <div className="App">
+            <RouteContainer /> 
+          </div> 
+      </PersistGate>
     );
   }
 }

@@ -26,10 +26,10 @@ const RouteContainer = () => {
         <Router>
             <div>
                 <Navbar />
-                <Switch>
-                    <Route path="/" component={Home} />
-                    <Route component={Home} />
-                </Switch>
+                    <Switch>
+                        <Route path="/" component={Home} />
+                        <Route component={Home} />
+                    </Switch>
                 <Footer />
             </div>
         </Router>

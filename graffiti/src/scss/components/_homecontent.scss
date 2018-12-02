@@ -12,4 +12,14 @@
     }
 }
 
+
+// Back to top button
+.btn-top {
+    @include border-radius(1px, #acacac);
+    background-color: #b4b4b4;
+    &:hover {
+        @include border-radius(1px, #c7c6ff);
+    }
+}
+
 // --------------------------------------------------------------------------------------------- //

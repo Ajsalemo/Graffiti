@@ -27,6 +27,13 @@ const HomeContent = () => {
                     </div>
                 </div>
             </div>
+            <div className="container mb-3">
+                <div className="row">
+                    <div className="col-md-12 text-center">
+                        <button className="btn btn-top">Back to top</button>
+                    </div>
+                </div>
+            </div>
         </div>    
     )
 };

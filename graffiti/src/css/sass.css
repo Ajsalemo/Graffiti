@@ -97,6 +97,16 @@ h1 {
   background-size: cover;
 }
 
+.btn-top {
+  border-radius: 1px;
+  border: #acacac solid;
+  background-color: #b4b4b4;
+}
+.btn-top:hover {
+  border-radius: 1px;
+  border: #c7c6ff solid;
+}
+
 .footer {
   height: auto;
   background-color: #b4b4b4;
