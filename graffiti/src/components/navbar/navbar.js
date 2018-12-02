@@ -28,8 +28,8 @@ const Navbar = () => {
                             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <div className="dropdown-directory pt-3 pb-3">
                                     <a className="dropdown-item" href="!#">Tags</a>
-                                    <a className="dropdown-item" href="!#">Throw-up</a>
-                                    <a className="dropdown-item" href="!#">Stencil</a>
+                                    <a className="dropdown-item" href="!#">Throw-ups</a>
+                                    <a className="dropdown-item" href="!#">Stencils</a>
                                     <a className="dropdown-item" href="!#">Pieces</a>
                                 </div>
                                 <div className="dropdown-directory pt-3 pb-3">

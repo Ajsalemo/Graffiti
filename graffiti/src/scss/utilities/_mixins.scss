@@ -6,5 +6,23 @@
     border: $pixel $style $color;
 }
 
+@mixin sm-media-query {
+    @media (min-width: $sm-screen-size) {
+        @content;
+    }
+ }
+
+@mixin md-media-query {
+    @media (min-width: $md-screen-size) {
+        @content;
+    }
+}
+
+@mixin lrg-media-query {
+    @media (min-width: $lrg-screen-size) {
+        @content;
+    }
+}
+
 // ---------------------------------------------------------------------- //
 // ---------------------------------------------------------------------- //

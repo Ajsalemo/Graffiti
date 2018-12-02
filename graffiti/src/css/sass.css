@@ -1,9 +1,3 @@
-.App {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
 nav .nav-form {
   flex-grow: 1;
   justify-content: space-around;
@@ -43,13 +37,9 @@ nav .dropdown-menu {
   padding: 0em;
   height: 100vh;
   width: 16em;
+  left: -5em;
 }
-@media (max-width: 768px) {
-  nav .dropdown-menu {
-    left: -5em;
-  }
-}
-@media (min-width: 1096px) {
+@media (min-width: 768px) {
   nav .dropdown-menu {
     left: 2em;
   }
@@ -71,6 +61,12 @@ nav .dropdown-directory {
 nav .form-control {
   border-radius: 0%;
   border: none;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .carousel {
@@ -108,6 +104,31 @@ h1 {
 .footer-text {
   color: #fff;
 }
+.footer-col, .footer-middle-col {
+  padding: 2em;
+}
+.footer-middle-col {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin: 0 3em;
+}
+@media (min-width: 768px) {
+  .footer-middle-col {
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    margin: 3em 0 0 0;
+  }
+}
+.footer-subrow {
+  background-color: #d1d1d1;
+  height: auto;
+  width: 100%;
+}
+.footer-related-col {
+  border-top: 1px solid #000;
+}
 .footer .fa-react {
   color: #007bff;
 }
@@ -116,6 +137,12 @@ h1 {
 }
 .footer .fa-sass {
   color: #c69;
+}
+.footer .fa-reddit {
+  color: #ff4500;
+}
+.footer .fa-flickr {
+  color: #000;
 }
 .footer a {
   display: block;

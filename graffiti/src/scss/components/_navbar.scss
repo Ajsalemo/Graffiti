@@ -9,11 +9,11 @@ nav {
             flex-basis: 90%;
             border-color: transparent;
 
-            @media (min-width: $lrg-screen-size) {
+            @include lrg-media-query {
                 flex-basis: 50%;
             }
 
-            @media (min-width: $md-screen-size) {
+            @include md-media-query {
                 flex-basis: 70%;
             }
         }
@@ -40,12 +40,8 @@ nav {
             padding: 0em;
             height: 100vh;
             width: 16em;
-
-            @media (max-width: $md-screen-size) {
-                left: -5em;
-            }
-
-            @media (min-width: $lrg-screen-size) {
+            left: -5em;
+            @include md-media-query {
                 left: 2em;
             }
         }
