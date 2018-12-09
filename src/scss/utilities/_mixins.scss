@@ -1,0 +1,28 @@
+// --------------------------------- Mixins ----------------------------- //
+// ---------------------------------------------------------------------- //
+
+@mixin border-radius($radius: 0%, $pixel: null, $style: solid, $color: null) {
+    border-radius: $radius;
+    border: $pixel $style $color;
+}
+
+@mixin sm-media-query {
+    @media (min-width: $sm-screen-size) {
+        @content;
+    }
+ }
+
+@mixin md-media-query {
+    @media (min-width: $md-screen-size) {
+        @content;
+    }
+}
+
+@mixin lrg-media-query {
+    @media (min-width: $lrg-screen-size) {
+        @content;
+    }
+}
+
+// ---------------------------------------------------------------------- //
+// ---------------------------------------------------------------------- //

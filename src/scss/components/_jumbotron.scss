@@ -1,0 +1,20 @@
+// --------------------------------- Jumbotron ----------------------------- //
+
+.carousel {
+    margin-bottom: $margin-seperator;
+    &-slider {
+        height: 45em;
+    }
+
+    .thumbs-wrapper {
+        padding-top: 1em;
+        text-align: center;
+        background-color: #343a40;
+    }
+}
+
+h1 {
+    font-weight: 100;
+}
+
+// ---------------------------------------------------------------------- //
