@@ -6,6 +6,9 @@ import React from 'react';
 // Images
 import parallax from '../../images/parallax.jpg';
 
+// Components
+import ImageDashboard from '../image-dashboard';
+
 // ---------------------------------------------------------------------- //
 // ---------------------------------------------------------------------- //
 const backgroundImage = {
@@ -30,7 +33,10 @@ const HomeContent = () => {
             <div className="container mb-3">
                 <div className="row">
                     <div className="col-md-12 text-center">
-                        <button className="btn btn-top">Back to top</button>
+                        <ImageDashboard />
+                        <div className="text-center mt-3">
+                            <button className="btn btn-top">Back to top</button>
+                        </div>
                     </div>
                 </div>
             </div>
