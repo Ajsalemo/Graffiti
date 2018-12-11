@@ -58,6 +58,10 @@ class Navbar extends Component {
                 this.setState({
                     loading: loading
                 })
+                window.scrollTo({
+                    top: 1600,
+                    behavior: 'smooth'
+                });
             })
     }
     // ------------------------------------------------------------------------------------------------------- //
@@ -84,7 +88,9 @@ class Navbar extends Component {
                         <div className="input-group nav-form-input">
                             {/* --------------- Prepended icon ----------------------------*/}
                             <div className="input-group-prepend">
-                                <button type="submit"><i className="fas fa-search"></i></button>
+                                <button type="submit">
+                                    <i className="fas fa-search"></i>
+                                </button>
                             </div>
                             {/* --------------------------------------------------------- */}
     
