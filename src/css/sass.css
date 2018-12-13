@@ -183,4 +183,11 @@ h1 {
   }
 }
 
+.no-results {
+  display: block;
+  font-style: italic;
+  font-size: 1.2em;
+  padding-bottom: 7em;
+}
+
 /*# sourceMappingURL=sass.css.map */
