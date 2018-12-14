@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { Field, reduxForm } from "redux-form";
 
 // Actions
-import { returnMostRecent } from '../../redux/actions';
+import { returnMostRecent, preDefinedNavbarSearch } from '../../redux/actions';
 
 // Components
 import LoadingIcon from '../loading-icon';
@@ -24,6 +24,7 @@ class Navbar extends Component {
         }
         this.loadMostRecent = this.loadMostRecent.bind(this);
         this.navbarInput = this.navbarInput.bind(this);
+        this.preDefinedSearch = this.preDefinedSearch.bind(this);
     }
 
     // ------------------------------------------------------------------------------------------------------- //
@@ -41,6 +42,25 @@ class Navbar extends Component {
            />
         )
     };  
+
+    preDefinedSearch = e => {
+        const { loading } = this.state;
+
+        this.setState({
+            loading: !loading
+        })
+
+        this.props.preDefinedNavbarSearch(e)
+            .then(() => {
+                this.setState({
+                    loading: loading
+                })
+                window.scrollTo({
+                    top: 1600,
+                    behavior: 'smooth'
+                });
+            })
+    }
 
     // ------------------------------------------------------------------------------------------------------- //
     // Search function that can either take in the users input or load the pre-defined value in the search bar 
@@ -103,26 +123,26 @@ class Navbar extends Component {
                             <div className="input-group-append">
                                 <div className="input-group-text dropdown">
                                     <button className="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                                    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" onClick={e => this.preDefinedSearch(e)}>
                                         <div className="dropdown-directory pt-3 pb-3">
-                                            <a className="dropdown-item" href="!#">Tags</a>
-                                            <a className="dropdown-item" href="!#">Throw-ups</a>
-                                            <a className="dropdown-item" href="!#">Stencils</a>
-                                            <a className="dropdown-item" href="!#">Pieces</a>
+                                            <a className="dropdown-item" data-item="tags" href="!#">Tags</a>
+                                            <a className="dropdown-item" data-item="throw-ups" href="!#">Throw-ups</a>
+                                            <a className="dropdown-item" data-item="stencils" href="!#">Stencils</a>
+                                            <a className="dropdown-item" data-item="pieces" href="!#">Pieces</a>
                                         </div>
                                         <div className="dropdown-directory pt-3 pb-3">
-                                            <a className="dropdown-item" href="!#" onClick={this.loadMostRecent}>New York</a>
-                                            <a className="dropdown-item" href="!#">London</a>
-                                            <a className="dropdown-item" href="!#">Paris</a>
-                                            <a className="dropdown-item" href="!#">Tokyo</a>
-                                            <a className="dropdown-item" href="!#">Seoul</a>
-                                            <a className="dropdown-item" href="!#">Sydney</a>
-                                            <a className="dropdown-item" href="!#">Sao Paulo</a>
-                                            <a className="dropdown-item" href="!#">Mexico City</a>
-                                            <a className="dropdown-item" href="!#">Vancouver </a>
-                                            <a className="dropdown-item" href="!#">Newark</a>
-                                            <a className="dropdown-item" href="!#">Rome</a>
-                                            <a className="dropdown-item" href="!#">Berlin</a>
+                                            <a className="dropdown-item" data-item="new york" href="!#">New York</a>
+                                            <a className="dropdown-item" data-item="london" href="!#">London</a>
+                                            <a className="dropdown-item" data-item="paris" href="!#">Paris</a>
+                                            <a className="dropdown-item" data-item="tokyo" href="!#">Tokyo</a>
+                                            <a className="dropdown-item" data-item="seoul" href="!#">Seoul</a>
+                                            <a className="dropdown-item" data-item="sydney" href="!#">Sydney</a>
+                                            <a className="dropdown-item" data-item="sao paulo" href="!#">Sao Paulo</a>
+                                            <a className="dropdown-item" data-item="mexico city" href="!#">Mexico City</a>
+                                            <a className="dropdown-item" data-item="vancouver" href="!#">Vancouver </a>
+                                            <a className="dropdown-item" data-item="newark" href="!#">Newark</a>
+                                            <a className="dropdown-item" data-item="rome" href="!#">Rome</a>
+                                            <a className="dropdown-item" data-item="berlin" href="!#">Berlin</a>
                                         </div>
                                         <div className="dropdown-directory">
                                             <a target="_blank" rel="noopener noreferrer" className="dropdown-item" href="https://github.com/Ajsalemo/Graffiti">Github</a>
@@ -162,7 +182,7 @@ Navbar = reduxForm({
 
 Navbar = connect(
     mapStateToProps,
-    { returnMostRecent }
+    { returnMostRecent, preDefinedNavbarSearch }
 )(Navbar);
 
 // ---------------------------------------------------------------------- //
