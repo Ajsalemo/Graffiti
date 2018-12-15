@@ -38,7 +38,7 @@ const ImageDashboard = props => {
                 alt='Not found' 
                 className="m-2 image-dashboard"
             />
-            <span className="no-results m-3">It seems nothing was found. Try another search term</span>
+            <span className="no-results m-3">It seems you haven't searched for anything yet - or nothing was found. Try searching for a term, city, or choose from a list of pre-defined searches in the searchbar dropdown menu</span>
         </div>
     )
 };
