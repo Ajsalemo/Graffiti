@@ -7,7 +7,7 @@ import { LOAD_IMAGES_SUBMIT } from './types';
 
 // ------------------------------------------------------------------------ //
 
-export const returnMostRecent = query => {
+export const returnUserSearch = query => {
     const API_KEY = process.env.REACT_APP_FLICKR_API_KEY;
     let searchTerm = query.toUpperCase();
     const graffiti = ' graffiti';
@@ -46,6 +46,7 @@ export const preDefinedNavbarSearch = e => {
     const preDefinedSearchTerm = filterSearchTerms ? searchByStyles : searchByCities;
 
     const preDefinedURL = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${API_KEY}&tags=${preDefinedSearchTerm}&per_page=100&format=json&nojsoncallback=1`;
+
     return dispatch => axios.get(preDefinedURL)
         .then(result => {
             dispatch({

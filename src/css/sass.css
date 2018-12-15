@@ -72,8 +72,10 @@ nav .form-control {
 .carousel {
   margin-bottom: 7em;
 }
-.carousel-slider {
-  height: 45em;
+@media (min-width: 895px) {
+  .carousel-slider {
+    height: 43em;
+  }
 }
 .carousel .thumbs-wrapper {
   padding-top: 1em;

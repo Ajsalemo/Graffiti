@@ -3,7 +3,9 @@
 .carousel {
     margin-bottom: $margin-seperator;
     &-slider {
-        height: 45em;
+        @include md-custom-query {
+            height: 43em;
+        }
     }
 
     .thumbs-wrapper {

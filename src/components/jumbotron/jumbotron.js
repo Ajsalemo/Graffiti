@@ -23,6 +23,7 @@ class Jumbotron extends Component {
                     transitionTime={700}
                     autoPlay={true}
                     infiniteLoop={true}
+                    dynamicHeight={true}
                 >
                     <div>
                         <img src={jumbotronOne} alt="Sidewalk wall of graffiti" />

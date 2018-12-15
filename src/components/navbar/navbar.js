@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { Field, reduxForm } from "redux-form";
 
 // Actions
-import { returnMostRecent, preDefinedNavbarSearch } from '../../redux/actions';
+import { returnUserSearch, preDefinedNavbarSearch } from '../../redux/actions';
 
 // Components
 import LoadingIcon from '../loading-icon';
@@ -43,6 +43,10 @@ class Navbar extends Component {
         )
     };  
 
+    // ------------------------------------------------------------------------------------------------------- //
+    // Search function that is drawn from a list of pre-defined queries
+    // ------------------------------------------------------------------------------------------------------- //
+
     preDefinedSearch = e => {
         const { loading } = this.state;
 
@@ -60,10 +64,13 @@ class Navbar extends Component {
                     behavior: 'smooth'
                 });
             })
+                .catch(err => {
+                    return err
+                })
     }
 
     // ------------------------------------------------------------------------------------------------------- //
-    // Search function that can either take in the users input or load the pre-defined value in the search bar 
+    // Search function that takes in the user's input
     // ------------------------------------------------------------------------------------------------------- //
     loadMostRecent = () => {
         const { loading } = this.state;
@@ -73,16 +80,23 @@ class Navbar extends Component {
             loading: !loading
         })
 
-        this.props.returnMostRecent(navbar.values.search)
-            .then(() => {
-                this.setState({
-                    loading: loading
-                })
-                window.scrollTo({
-                    top: 1600,
-                    behavior: 'smooth'
-                });
+        if(!navbar.values) {
+            this.setState({
+                loading: loading
             })
+            return;
+        } else {
+            this.props.returnUserSearch(navbar.values.search)
+                .then(() => {
+                    this.setState({
+                        loading: loading
+                    })
+                    window.scrollTo({
+                        top: 1600,
+                        behavior: 'smooth'
+                    });
+                });
+        }
     }
     // ------------------------------------------------------------------------------------------------------- //
     // ------------------------------------------------------------------------------------------------------- //
@@ -182,7 +196,7 @@ Navbar = reduxForm({
 
 Navbar = connect(
     mapStateToProps,
-    { returnMostRecent, preDefinedNavbarSearch }
+    { returnUserSearch, preDefinedNavbarSearch }
 )(Navbar);
 
 // ---------------------------------------------------------------------- //
