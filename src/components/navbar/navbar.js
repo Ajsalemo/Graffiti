@@ -54,19 +54,29 @@ class Navbar extends Component {
             loading: !loading
         })
 
-        this.props.preDefinedNavbarSearch(e)
-            .then(() => {
-                this.setState({
-                    loading: loading
-                })
-                window.scrollTo({
-                    top: 1600,
-                    behavior: 'smooth'
-                });
+        if(!e.target.attributes[1]) {
+            this.setState({
+                loading: loading
             })
-                .catch(err => {
-                    return err
+            return;
+        } else {
+            this.props.preDefinedNavbarSearch(e)
+                .then(() => {
+                    this.setState({
+                        loading: loading
+                    })
+                    window.scrollTo({
+                        top: 1600,
+                        behavior: 'smooth' 
+                    });
                 })
+                .catch(err => {
+                    this.setState({
+                        loading: loading
+                    })
+                    return err;
+                })
+        }
     }
 
     // ------------------------------------------------------------------------------------------------------- //
@@ -95,7 +105,13 @@ class Navbar extends Component {
                         top: 1600,
                         behavior: 'smooth'
                     });
-                });
+                })
+                .catch(err => {
+                    this.setState({
+                        loading: loading
+                    })
+                    return err;
+                })
         }
     }
     // ------------------------------------------------------------------------------------------------------- //

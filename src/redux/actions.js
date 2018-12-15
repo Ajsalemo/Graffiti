@@ -34,9 +34,10 @@ export const returnUserSearch = query => {
 
 export const preDefinedNavbarSearch = e => {
     const API_KEY = process.env.REACT_APP_FLICKR_API_KEY;
-    // Data attributes and checking to see if it includes certain terms
-    const dataAttr = e.target.attributes.getNamedItem('data-item').value;
     const conditions = ['tags', 'throw-ups', 'stencils', 'pieces'];
+
+    // Data attributes and checking to see if it includes certain terms
+    const dataAttr = e.target.attributes[1].value;
     const filterSearchTerms = conditions.some(e => dataAttr.includes(e));
 
     // Search terms converted to a string
@@ -46,7 +47,7 @@ export const preDefinedNavbarSearch = e => {
     const preDefinedSearchTerm = filterSearchTerms ? searchByStyles : searchByCities;
 
     const preDefinedURL = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${API_KEY}&tags=${preDefinedSearchTerm}&per_page=100&format=json&nojsoncallback=1`;
-
+    
     return dispatch => axios.get(preDefinedURL)
         .then(result => {
             dispatch({
