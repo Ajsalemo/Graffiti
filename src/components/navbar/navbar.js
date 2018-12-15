@@ -176,7 +176,7 @@ class Navbar extends Component {
                                         </div>
                                         <div className="dropdown-directory">
                                             <a target="_blank" rel="noopener noreferrer" className="dropdown-item" href="https://github.com/Ajsalemo/Graffiti">Github</a>
-                                            <a className="dropdown-item pb-3" href="!#">Inspiration</a>
+                                            <a target="_blank" rel="noopener noreferrer" className="dropdown-item pb-3" href="https://www.graffiti.org/">Inspiration</a>
                                         </div>
                                     </div>   
                                 </div>
