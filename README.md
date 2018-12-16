@@ -22,7 +22,7 @@ User's can also click on the dropdown icon in the navigation bar to choose from 
 
 <br><br>
 
-[!Graffiti-Search2](https://media.giphy.com/media/5ton5iSIuJ7kbsGYDR/giphy.gif)
+![Graffiti-Search2](https://media.giphy.com/media/5ton5iSIuJ7kbsGYDR/giphy.gif)
 
 <br>
 
