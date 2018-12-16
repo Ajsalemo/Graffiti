@@ -20,9 +20,9 @@ User's can also click on the dropdown icon in the navigation bar to choose from 
 
 ![Graffiti-Search1](https://media.giphy.com/media/4ZxeQMepBvJl77WtMB/giphy.gif)
 
-<br><br>
+<br>
 
-![Graffiti-Search2](https://media.giphy.com/media/443ttS99TRiSCFLwkm/giphy.gif)
+![Graffiti-Search2](https://media.giphy.com/media/k5zGONPlSDa7tCzylB/giphy.gif)
 
 <br>
 
