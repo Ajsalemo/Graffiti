@@ -15,4 +15,4 @@ This website is primarily built using React, Redux, Node, Bootstrap and SASS. Al
 
 
 ![Graffiti-Jumbotron](https://media.giphy.com/media/vx3uCFfAW6YpaYH5kC/giphy.gif)
-![Graffit-Search1](https://media.giphy.com/media/bEgA3KbU5T0dg2WocF/giphy.gif)
+![Graffit-Search1](https://media.giphy.com/media/4ZxeQMepBvJl77WtMB/giphy.gif)
