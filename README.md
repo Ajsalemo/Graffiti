@@ -12,3 +12,6 @@ User's can also click on the dropdown icon in the navigation bar to choose from 
 
 ## Technologies
 This website is primarily built using React, Redux, Node, Bootstrap and SASS. Also including a few additional NPM packages as well.
+
+
+![Graffiti-Jumbotron](https://media.giphy.com/media/vx3uCFfAW6YpaYH5kC/giphy.gif)
