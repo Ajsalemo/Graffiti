@@ -16,10 +16,6 @@ nav .nav-form-input {
     flex-basis: 70%;
   }
 }
-nav .fa-home {
-  color: #fff;
-  font-size: 1.1em;
-}
 nav button,
 nav .input-group-text {
   background-color: #fff;

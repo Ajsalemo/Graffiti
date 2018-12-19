@@ -3,7 +3,6 @@
 
 import React, { Component } from 'react';
 import { connect } from "react-redux";
-import { Link } from 'react-router-dom';
 import { Field, reduxForm } from "redux-form";
 
 // Actions
@@ -124,8 +123,6 @@ class Navbar extends Component {
 
         return (
             <nav className="navbar navbar-light bg-dark fixed-top">
-                <Link to="/" className="navbar-brand"><i className="fas fa-home"></i></Link>
-
                 { 
                     loading
                         ?
