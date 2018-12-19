@@ -20,8 +20,6 @@ User's can also click on the dropdown icon in the navigation bar to choose from 
 
 ![Graffiti-Search1](https://media.giphy.com/media/4ZxeQMepBvJl77WtMB/giphy.gif)
 
-![Graffiti-Search2](https://media.giphy.com/media/MViCSGtZcLyDGUAfZ4/giphy.gif)
-
 <br>
 
 ## Technologies
