@@ -8,8 +8,8 @@ import ReactLoading from 'react-loading';
 // ---------------------------------------------------------------------- //
  
 const LoadingIcon = ({ type, color }) => (
-    <span className="loading-spinner">
-        <ReactLoading type={type} color={color} height={'5%'} width={'5%'} />
+    <span className="loading-spinner mx-auto">
+        <ReactLoading type={type} color={color} height={'5%'} width={'5%'} className={'m-auto'}/>
     </span>
 );
  

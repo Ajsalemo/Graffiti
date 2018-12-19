@@ -163,6 +163,9 @@ h1 {
 .loading-spinner {
   width: 50%;
 }
+.loading-spinner .m-auto {
+  margin: 0 auto;
+}
 
 .image-dashboard {
   width: 400px;
