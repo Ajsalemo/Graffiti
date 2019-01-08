@@ -22,10 +22,6 @@ User's can also click on the dropdown icon in the navigation bar to choose from 
 
 <br>
 
-![Graffiti-Search2](https://media.giphy.com/media/k5zGONPlSDa7tCzylB/giphy.gif)
-
-<br>
-
 ## Technologies
 This website is primarily built using React, Redux, Node, Bootstrap and SASS. Also including a few additional NPM packages as well.
 
