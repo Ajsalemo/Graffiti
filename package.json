@@ -18,17 +18,15 @@
     "redux": "^4.0.1",
     "redux-form": "^7.4.2",
     "redux-persist": "^5.10.0",
-    "redux-thunk": "^2.3.0",
-    "serve": "^10.1.1"
+    "redux-thunk": "^2.3.0"
   },
   "homepage": "https://ajsalemo.github.io/Graffiti/",
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "sass": "sass --watch src/scss:src/css"
   },
   "eslintConfig": {
     "extends": "react-app"
