@@ -26,8 +26,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "sass": "sass --watch src/scss:src/css",
-    "heroku-postbuild": "echo Skip build on Heroku"
+    "sass": "sass --watch src/scss:src/css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,9 +36,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
-  },
-  "heroku-run-build-script": true
+  ]
 }

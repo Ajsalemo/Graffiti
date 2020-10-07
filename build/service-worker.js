@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Graffiti/precache-manifest.01e805cee8c59d1ffd142787c1a9a3dd.js"
+  "/Graffiti/precache-manifest.09c8ea61565d19bb4d9db91bde0da07d.js"
 );
 
 workbox.clientsClaim();

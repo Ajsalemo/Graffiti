@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "c8226ff481b7d99782e8",
+    "revision": "fa35e0e33babf34ca177",
     "url": "/Graffiti/static/css/main.b6d9420c.chunk.css"
   },
   {
-    "revision": "c8226ff481b7d99782e8",
-    "url": "/Graffiti/static/js/main.c8226ff4.chunk.js"
+    "revision": "fa35e0e33babf34ca177",
+    "url": "/Graffiti/static/js/main.fa35e0e3.chunk.js"
   },
   {
-    "revision": "ed872a13a6a81372aea8",
+    "revision": "fe359397d349131b9f39",
     "url": "/Graffiti/static/css/1.a1233066.chunk.css"
   },
   {
-    "revision": "ed872a13a6a81372aea8",
-    "url": "/Graffiti/static/js/1.ed872a13.chunk.js"
+    "revision": "fe359397d349131b9f39",
+    "url": "/Graffiti/static/js/1.fe359397.chunk.js"
   },
   {
     "revision": "216ab727ae44b7c8ed4b",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/Graffiti/static/media/notfound.208d7cf0.jpg"
   },
   {
-    "revision": "bcb5ecde6c82c7d483195d496536a2e5",
+    "revision": "caf4355543d1a5eb060f56c79af272c4",
     "url": "/Graffiti/index.html"
   }
 ];
