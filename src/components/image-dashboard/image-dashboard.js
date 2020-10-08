@@ -7,6 +7,9 @@ import { connect } from 'react-redux';
 // Images
 import notfound from '../../images/notfound.jpg'
 
+// Component
+import LazyLoadImage from '../lazyloadimage/lazyloadimage'
+
 // ---------------------------------------------------------------------- //
 // ---------------------------------------------------------------------- //
 
@@ -23,9 +26,9 @@ const ImageDashboard = props => {
                 const title = image.title;
         
                 return (
-                    <img 
-                        key={i} 
-                        src={`http://farm${farm}.staticflickr.com/${server}/${id}_${secret}.jpg`} 
+                    <LazyLoadImage 
+                        i={i} 
+                        src={`https://farm${farm}.staticflickr.com/${server}/${id}_${secret}.jpg`} 
                         alt={title} 
                         className="m-2 image-dashboard img-fluid"
                     />
@@ -33,7 +36,7 @@ const ImageDashboard = props => {
             })
         :
         <div>
-            <img  
+            <LazyLoadImage  
                 src={notfound} 
                 alt='Not found' 
                 className="image-dashboard img-fluid"
