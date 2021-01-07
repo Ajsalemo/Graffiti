@@ -152,24 +152,24 @@ class Navbar extends Component {
                                     <button className="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
                                     <div className="dropdown-menu" aria-labelledby="dropdownMenuButton" onClick={e => this.preDefinedSearch(e)}>
                                         <div className="dropdown-directory pt-3 pb-3">
-                                            <a className="dropdown-item" data-item="tags" href="!#">Tags</a>
-                                            <a className="dropdown-item" data-item="throw-ups" href="!#">Throw-ups</a>
-                                            <a className="dropdown-item" data-item="stencils" href="!#">Stencils</a>
-                                            <a className="dropdown-item" data-item="pieces" href="!#">Pieces</a>
+                                            <button className="dropdown-item" data-item="tags">Tags</button>
+                                            <button className="dropdown-item" data-item="throw-ups">Throw-ups</button>
+                                            <button className="dropdown-item" data-item="stencils">Stencils</button>
+                                            <button className="dropdown-item" data-item="pieces">Pieces</button>
                                         </div>
                                         <div className="dropdown-directory pt-3 pb-3">
-                                            <a className="dropdown-item" data-item="new york" href="!#">New York</a>
-                                            <a className="dropdown-item" data-item="london" href="!#">London</a>
-                                            <a className="dropdown-item" data-item="paris" href="!#">Paris</a>
-                                            <a className="dropdown-item" data-item="tokyo" href="!#">Tokyo</a>
-                                            <a className="dropdown-item" data-item="seoul" href="!#">Seoul</a>
-                                            <a className="dropdown-item" data-item="sydney" href="!#">Sydney</a>
-                                            <a className="dropdown-item" data-item="sao paulo" href="!#">Sao Paulo</a>
-                                            <a className="dropdown-item" data-item="mexico city" href="!#">Mexico City</a>
-                                            <a className="dropdown-item" data-item="vancouver" href="!#">Vancouver </a>
-                                            <a className="dropdown-item" data-item="newark" href="!#">Newark</a>
-                                            <a className="dropdown-item" data-item="rome" href="!#">Rome</a>
-                                            <a className="dropdown-item" data-item="berlin" href="!#">Berlin</a>
+                                            <button  className="dropdown-item" data-item="new york">New York</button>
+                                            <button  className="dropdown-item" data-item="london">London</button>
+                                            <button  className="dropdown-item" data-item="paris">Paris</button>
+                                            <button  className="dropdown-item" data-item="tokyo">Tokyo</button>
+                                            <button  className="dropdown-item" data-item="seoul">Seoul</button>
+                                            <button  className="dropdown-item" data-item="sydney">Sydney</button>
+                                            <button  className="dropdown-item" data-item="sao paulo">Sao Paulo</button>
+                                            <button  className="dropdown-item" data-item="mexico city">Mexico City</button>
+                                            <button  className="dropdown-item" data-item="vancouver">Vancouver </button>
+                                            <button  className="dropdown-item" data-item="newark">Newark</button>
+                                            <button  className="dropdown-item" data-item="rome">Rome</button>
+                                            <button  className="dropdown-item" data-item="berlin">Berlin</button>
                                         </div>
                                         <div className="dropdown-directory">
                                             <a target="_blank" rel="noopener noreferrer" className="dropdown-item" href="https://github.com/Ajsalemo/Graffiti">Github</a>
