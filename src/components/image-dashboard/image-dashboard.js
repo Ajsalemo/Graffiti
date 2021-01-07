@@ -25,7 +25,7 @@ const ImageDashboard = props => {
                 return (
                     <img 
                         key={i} 
-                        src={`http://farm${farm}.staticflickr.com/${server}/${id}_${secret}.jpg`} 
+                        src={`https://farm${farm}.staticflickr.com/${server}/${id}_${secret}.jpg`} 
                         alt={title} 
                         className="m-2 image-dashboard img-fluid"
                     />
